@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+    background-color: #9be798;
+}
+
+#sofa-animated,
+#btn_x {
+    display: none;
+}
+
+#imagem, #sofa-animated {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: transparent;
+    right: 0px;
+    left: 20px;
+
+}
+
+.btn_360 {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    right: 4px;
+    top: 4px;
+}
+
+
+
+
+h4 {
+    color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+
+    font-weight: 300;
+    font-size: 13px;
+    opacity: 0.6;
+    line-height: 100%;
+}
+
+h1 {
+    color: #271A45;
+
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+
+    margin-top: 12px;
+}
+
+p {
+    color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    opacity: 0.6;
+    line-height: 100%;
+
+    margin-top: 12px;
+}
+
+.add:hover a {
+    background-color: #271A45;
+    color: white;
+}
+
+/* Botao 360 graus */
+#imagem button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Animacao do produto */
+html.animated #btn_360,
+html.animated #sofa-static{
+    display: none;
+}
+
+html.animated #btn_x,
+html.animated #sofa-animated{
+    display: initial;
+}
+
+ a button {
+    color: #271A45;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 200px;
+    line-height: 200px;
+
+    margin-top: 500px;
+    padding: 10px 20px;
+    border: 0.5px solid #271A45;
+    border-radius: 60px;
+
+    cursor: pointer;
+}
+
+ul li {
+    background-image: linear-gradient(to right,rgb(255, 255, 255), rgb(92, 204, 125));
+            width: 17%;
+            border: none;
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            list-style: none;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: transparent;
+        
+
+}
